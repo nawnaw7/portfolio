@@ -7,6 +7,9 @@ body {
     position: relative;
 }
 
+
+/***** NAVBAR STYLE *****/
+
 nav.navbar {
     background-color: rgba(243, 242, 241, 0.8);
 }
@@ -25,13 +28,12 @@ nav.navbar .navbar-nav .nav-link:hover::after {
 }
 
 @media only screen and (max-width: 768px) {
-    nav.navbar .navbar-nav .nav-link:hover::after {
-        width: 15%;
-    } /* !!!!! Needs adjustments !!!!!*/
-    
+    nav.navbar .navbar-nav .nav-item .nav-link {
+        display: inline-block;
+    }
     nav.navbar {
-    background-color: rgba(243, 242, 241, 1);
-}
+        background-color: rgba(243, 242, 241, 1);
+    }
 }
 
 nav.navbar .navbar-nav a.active .first-let {
@@ -49,6 +51,9 @@ nav.navbar .navbar-nav a.active {
 .logo-color {
     color: #0097A7;
 }
+
+
+/***** HEADER STYLE *****/
 
 .header {
     background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.01)), url(images/header.jpg) center center no-repeat;
@@ -68,7 +73,7 @@ nav.navbar .navbar-nav a.active {
 }
 
 
-/* BOUNCING DOWN ICON */
+/***** BOUNCING DOWN ICON *****/
 
 .ion-chevron-down {
     font-size: 150%;
@@ -145,6 +150,9 @@ nav.navbar .navbar-nav a.active {
     }
 }
 
+
+/***** SECTIONS STYLE *****/
+
 #about,
 #skills {
     text-align: center;
@@ -170,7 +178,7 @@ nav.navbar .navbar-nav a.active {
 }
 
 
-/* PARALLAX */
+/***** PARALLAX *****/
 
 .parallax {
     background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.1)), url(images/mona-eendra-97763.jpg);
