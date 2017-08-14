@@ -14,23 +14,23 @@
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-navbar" data-offset="130">
     <!-- NAVBAR -->
-    <nav class="navbar sticky-top navbar-toggleable-sm navbar-light bg-faded">
+    <nav class="navbar sticky-top navbar-toggleable-sm navbar-light bg-faded" id="main-navbar">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#"><span class="logo-color">N</span>aw<span class="logo-color">n</span>aw</a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Skills</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Projects</a>
@@ -49,10 +49,21 @@
         
     </div>
     
+    <!-- ABOUT -->
     <div class="container" id="about">
         <h2 class="section-title">About</h2>
         <p id="about-description">Konnichiwa! ^^ <br> I am a Web Developer! <br> I absolutely love what I do! <br> I enjoy turning ideas into reality! <br> I am a cat AND a dog person!<br> Let's do awesome stuff together!</p>
         <button type="button" class="btn btn-outline-info" id="write-me">Write me! <i class="ion-happy-outline"></i></button>
+    </div>
+    
+    <!-- PARALLAX 1 -->
+    <div class="parallax">
+        <p class="parallax-text">BE INSPIRED!</p>
+    </div>
+    
+    <!-- SKILLS -->
+    <div class="container" id="skills">
+        <h2 class="section-title">Skills</h2>
     </div>
 
 

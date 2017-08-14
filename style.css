@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    position: relative;
+}
+
 .logo-color {
     color: #0097A7;
 }
@@ -24,6 +28,7 @@
     font-size: 180%;
 }
 
+/* BOUNCING DOWN ICON */
 .ion-chevron-down {
     font-size: 150%;
     color: #00BCD4;
@@ -99,7 +104,7 @@
     }
 }
 
-#about {
+#about, #skills {
     text-align: center;
     margin-top: 120px;
     margin-bottom: 100px;
@@ -117,3 +122,47 @@
     margin-bottom: 50px;
     line-height: 30px;
 }
+
+#skills {
+    height: 1000px;
+}
+
+/* PARALLAX */
+.parallax {
+    background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.1)), url(images/mona-eendra-97763.jpg);
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #FF4081;
+    margin: 40px 600px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+    
+    .parallax-text {
+        margin: 40px 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .parallax-text {
+        margin: 40px 100px;
+    }
+}
+
