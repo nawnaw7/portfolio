@@ -7,6 +7,45 @@ body {
     position: relative;
 }
 
+nav.navbar {
+    background-color: rgba(243, 242, 241, 0.8);
+}
+
+nav.navbar .navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #0097A7;
+    transition: width .3s;
+}
+
+nav.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    nav.navbar .navbar-nav .nav-link:hover::after {
+        width: 15%;
+    } /* !!!!! Needs adjustments !!!!!*/
+    
+    nav.navbar {
+    background-color: rgba(243, 242, 241, 1);
+}
+}
+
+nav.navbar .navbar-nav a.active .first-let {
+    color: #0097A7;
+}
+
+nav.navbar .navbar-nav a.active .last-let {
+    color: dimgray;
+}
+
+nav.navbar .navbar-nav a.active {
+    margin: 0 10px;
+}
+
 .logo-color {
     color: #0097A7;
 }
@@ -28,7 +67,9 @@ body {
     font-size: 180%;
 }
 
+
 /* BOUNCING DOWN ICON */
+
 .ion-chevron-down {
     font-size: 150%;
     color: #00BCD4;
@@ -104,7 +145,8 @@ body {
     }
 }
 
-#about, #skills {
+#about,
+#skills {
     text-align: center;
     margin-top: 120px;
     margin-bottom: 100px;
@@ -127,7 +169,9 @@ body {
     height: 1000px;
 }
 
+
 /* PARALLAX */
+
 .parallax {
     background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.1)), url(images/mona-eendra-97763.jpg);
     height: 350px;
@@ -154,7 +198,6 @@ body {
     .parallax {
         background-attachment: scroll;
     }
-    
     .parallax-text {
         margin: 40px 300px;
     }
@@ -165,4 +208,3 @@ body {
         margin: 40px 100px;
     }
 }
-
