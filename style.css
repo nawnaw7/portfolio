@@ -164,7 +164,7 @@ nav.navbar .navbar-nav a.active {
     border-bottom: 3px solid #00BCD4;
     width: 85px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     padding-bottom: 7px;
 }
 
@@ -174,45 +174,107 @@ nav.navbar .navbar-nav a.active {
 }
 
 #skills {
-    height: 1000px;
+    max-width: 700px;
 }
 
+.skill-icons {
+    margin-bottom: 60px;
+}
+
+#html-logo {
+    color: rgb(222, 53, 20);
+}
+#css-logo {
+    color: rgb(22, 74, 161);
+}
+#js-logo {
+    color: rgb(206, 176, 21);
+}
+#bootstrap-logo {
+    color: rgb(78, 25, 120);
+}
+#jquery-logo {
+    color: rgb(0, 101, 178);
+}
+#vue-logo {
+    color: rgb(50, 174, 110);
+}
+#ps-logo {
+    color: rgb(36, 188, 251);
+}
+
+.skill-description {
+    font-size: 110%;
+}
+
+#projects, #contact {
+    height: 1500px;
+}
 
 /***** PARALLAX *****/
 
-.parallax {
+.parallax1 {
     background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.1)), url(images/mona-eendra-97763.jpg);
-    height: 350px;
+    height: 380px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.parallax-text {
+.parallax2 {
+    background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.1)), url(images/parallax2.jpg);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.1)), url(images/parallax3.jpg);
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-text1, .parallax-text2, .parallax-text3 {
     text-align: center;
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    background-color: #FF4081;
     margin: 40px 600px;
     padding: 10px;
     color: #FFFFFF;
 }
 
+.parallax-text1{
+    background-color: #FF4081;
+}
+
+.parallax-text2 {
+    background-color: #B2EBF2;
+}
+
+.parallax-text3 {
+    background-color: blueviolet;
+}
+
 @media only screen and (max-width: 1024px) {
-    .parallax {
+    .parallax1, .parallax2, .parallax3 {
         background-attachment: scroll;
     }
-    .parallax-text {
+    .parallax-text1, .parallax-text2, .parallax-text3 {
         margin: 40px 300px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .parallax-text {
+    .parallax-text1, .parallax-text2, .parallax-text3 {
         margin: 40px 100px;
     }
 }
