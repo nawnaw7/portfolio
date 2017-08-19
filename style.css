@@ -224,24 +224,17 @@ nav.navbar .navbar-nav a.active {
 
 .parallax1 {
     background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.1)), url(images/mona-eendra-97763.jpg);
-    height: 450px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .parallax2 {
     background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.1)), url(images/parallax2.jpg);
-    height: 450px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .parallax3 {
     background: linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.1)), url(images/parallax3.jpg);
+}
+
+.parallax1, .parallax2, .parallax3 {
     height: 450px;
     background-attachment: fixed;
     background-position: center;
