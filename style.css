@@ -61,7 +61,7 @@ nav.navbar .navbar-nav a.active {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 850px;
+    height: 880px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -70,6 +70,12 @@ nav.navbar .navbar-nav a.active {
     padding-top: 100px;
     padding-bottom: 50px;
     font-size: 180%;
+    color: #C5A86B;
+}
+
+.bar {
+    color: #0097A7;
+    opacity: 0.4;
 }
 
 
@@ -246,12 +252,14 @@ nav.navbar .navbar-nav a.active {
     text-align: center;
     position: relative;
     top: 50%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin: 40px 600px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    max-width: 500px;
     padding: 10px;
     color: #FFFFFF;
+    
 }
 
 .parallax-text1{
@@ -270,13 +278,10 @@ nav.navbar .navbar-nav a.active {
     .parallax1, .parallax2, .parallax3 {
         background-attachment: scroll;
     }
-    .parallax-text1, .parallax-text2, .parallax-text3 {
-        margin: 40px 300px;
-    }
 }
 
 @media only screen and (max-width: 768px) {
     .parallax-text1, .parallax-text2, .parallax-text3 {
-        margin: 40px 100px;
+        max-width: 90%;
     }
 }
